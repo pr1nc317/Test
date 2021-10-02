@@ -1,0 +1,11 @@
+{
+  "Vin": "CAR29",
+  "Id": "09f1d2f59fc542a3a1a3d5015e4b3928",
+  "CommandId": "1c3bb281-d945-4d51-80c9-12e46be55488",
+  "NotificationType": "Notification",
+  "MessageType": "PREReminderAlert",
+  "TimeStamp": "2021-07-23T15:17:06Z",
+  "Data": {
+    "TimeOfCharge": "2021-07-23T20:16:55Z"
+  }
+}
