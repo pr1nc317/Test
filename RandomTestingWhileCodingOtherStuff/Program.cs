@@ -9,8 +9,21 @@
 
     class Program
     {
+        static void Tripplet(int[] array)
+        {
+            var result = new List<int>();
+            Array.Sort(array);
+            for (int i = array.Length - 1; i >= array.Length - 3; i--)
+            {
+                result.Add(array[i]);
+            }
+        }
+
         static void Main(string[] args)
         {
+            int[] array = new int[5] { 1, 5, 7, 10, 2 };
+            Tripplet(array);
+
             var list = new List<int>() { 1, 2, 3, 0, 0 };
             var output = list.RemoveAll(x=> x==0);
             

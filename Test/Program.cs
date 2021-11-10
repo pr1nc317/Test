@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace Test
 {
@@ -7,47 +9,40 @@ namespace Test
     {
         static void Main()
         {
-            string input = Console.ReadLine();
-            Console.WriteLine(input.Length);
+            //amazon , azonam-> true
+            //amazon, azanam-> false
+            //amazon, aozman-> false
+            //amazon , onamaz-> true
+            //amazon, amonaz-> false
 
-            char[] chararray = input.ToCharArray();
-            int count = 0;
-            List<char> list = new List<char>();
-            for (var item = 0; item < chararray.Length; item++)
+            // length should be same
+            var input1 = "amazon";
+            var input2 = "amonaz";
+            
+            if (input1.Length.Equals(input2.Length))
             {
-                if (!list.Contains(chararray[item]))
+                for (int i = 0; i < input2.Length; i++)
                 {
-                    list.Add(chararray[item]);
-                }
-            }
-
-            List<char> charlist = new List<char>();
-            foreach (var i in list)
-            {
-                for (int a = 0; a < chararray.Length; a++)
-                {
-                    if (i == chararray[a])
+                    var character = input2.Substring(input2.Length - 1);
+                    var interimStr = input2.Substring(0, input2.Length - 1).ToList<char>();
+                    interimStr.Insert(0, character.ToCharArray()[0]);
+                    var str = string.Empty;
+                    foreach(var item in interimStr)
                     {
-                        count++;
+                        str += item;
                     }
-                }
-                Console.WriteLine(i + " - " + count);
-                if (count > 1)
-                {
-                    charlist.Add(i);
-                }
-                count = 0;
-            }
-            if (charlist.Count > 1)
-            {
-                Console.Write("Second Repeater - " + charlist[1]);
-            }
-            else Console.WriteLine("There is no second repeated character");
-            Console.ReadLine();
+                    input2 = str;
+                    if (input2.Equals(input1))
+                        Console.WriteLine("true");
 
-            Dictionary<int, int> Dict = new Dictionary<int, int>();
-            Dict.Add(1, 2);
-            Dict.Add(2, 3);
+                    else Console.WriteLine("false");
+                    // switch the char position
+                    //for (int j = 0)
+                }
+            }
+            // instance of the charaters should be same
+
+
 
         }
     }
