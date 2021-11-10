@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Inheritance.cs" />
     <Compile Include="MethodOverloading.cs" />
+    <Compile Include="MethodOverriding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

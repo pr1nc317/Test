@@ -43,10 +43,10 @@ namespace Inheritance
             }
         }
 
-        static void Main(string[] args)
-        {
-            Car car = new Car(4, 4);
-            Bus bus = new Bus(30, 6);
-        }
+        //static void Main(string[] args)
+        //{
+        //    Car car = new Car(4, 4);
+        //    Bus bus = new Bus(30, 6);
+        //}
     }
 }
