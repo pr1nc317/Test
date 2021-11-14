@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
+    /// <summary>
+    ///  LEARNINGS:
+    ///  Abstract methods cannot be inside a non-abstract class. If a class has abstract method, then that class should also be made abstract.
+    ///  Abstract methods cannot be defined, but only declared. Child classes should define abstract methods strictly.
+    ///  Static methods can only be called using the class type, not by the instance variable of that class.
+    ///  Static member inside a abstract class cannot be marked as virtual, abstract or override.
+    ///  Abstract types cannot be sealed or static.
+    /// </summary>
     class Inheritance
     {
-        public class Vehicle
+        public abstract class Vehicle
         {
             private string vehicleId;
             private string color;
@@ -18,6 +26,11 @@ namespace Inheritance
                 vehicleId = "DL 1234 ";
                 color = "Black";
                 licenceId = 1234;
+            }
+
+            public static void Method1()
+            {
+                Console.WriteLine("Base class static method");
             }
         }
 
@@ -30,6 +43,7 @@ namespace Inheritance
                 numberOfPassengers = P;
                 numberOfWheels = W;
             }
+            
         }
 
         public class Bus: Vehicle
@@ -41,12 +55,14 @@ namespace Inheritance
                 numberOfPassengers = P;
                 numberOfWheels = W;
             }
+
+            
         }
 
-        //static void Main(string[] args)
-        //{
-        //    Car car = new Car(4, 4);
-        //    Bus bus = new Bus(30, 6);
-        //}
+        static void Main(string[] args)
+        {
+            Car car = new Car(4, 4);
+            Bus bus = new Bus(30, 6);
+        }
     }
 }
