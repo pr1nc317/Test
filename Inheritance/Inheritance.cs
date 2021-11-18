@@ -13,6 +13,9 @@ namespace Inheritance
     ///  Static methods can only be called using the class type, not by the instance variable of that class.
     ///  Static member inside a abstract class cannot be marked as virtual, abstract or override.
     ///  Abstract types cannot be sealed or static.
+    ///  Static classes cannot be inherited as they are sealed in nature.
+    ///  Extension Methods has to be implemented inside a static class.
+    ///  Extension Methods cannot be created inside a nested class.
     /// </summary>
     class Inheritance
     {
