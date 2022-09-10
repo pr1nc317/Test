@@ -9,7 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomTestingWhileCodingOtherStuff", "RandomTestingWhileCodingOtherStuff\RandomTestingWhileCodingOtherStuff.csproj", "{11EAB73B-7204-4502-8E78-F486B02B936D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airtel", "Airtel\Airtel.csproj", "{3A56D729-6AD9-4EDF-B96E-C41989BF8FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airtel", "Airtel\Airtel.csproj", "{3A56D729-6AD9-4EDF-B96E-C41989BF8FA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9LakhNumbers", "9LakhNumbers\9LakhNumbers.csproj", "{B593CDAB-B8FF-45B3-A8D2-17C4267BBE76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HectorHelp", "HectorHelp\HectorHelp.csproj", "{84F83045-529B-49C2-8234-8D9008F6EA0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{3A56D729-6AD9-4EDF-B96E-C41989BF8FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A56D729-6AD9-4EDF-B96E-C41989BF8FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A56D729-6AD9-4EDF-B96E-C41989BF8FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B593CDAB-B8FF-45B3-A8D2-17C4267BBE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B593CDAB-B8FF-45B3-A8D2-17C4267BBE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B593CDAB-B8FF-45B3-A8D2-17C4267BBE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B593CDAB-B8FF-45B3-A8D2-17C4267BBE76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F83045-529B-49C2-8234-8D9008F6EA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F83045-529B-49C2-8234-8D9008F6EA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F83045-529B-49C2-8234-8D9008F6EA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F83045-529B-49C2-8234-8D9008F6EA0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
